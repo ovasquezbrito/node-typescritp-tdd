@@ -1,5 +1,6 @@
-export class foodModelHelper {
+export class FoodModelHelper {
   name: string
   description: string
   price: number
+  inventory: number
 }
