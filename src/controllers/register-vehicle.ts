@@ -1,3 +1,4 @@
+import { MissingFormalParameter } from '../errors/client-error'
 import { HttpRequest, HttpResponse } from '../interfaces/http-interface'
 
 export class RegisterVehicle {
@@ -11,7 +12,7 @@ export class RegisterVehicle {
     }
     return {
       statusCode: 400,
-      body: new Error(`error in the: ${pro}`)
+      body: new MissingFormalParameter(pro)
     }
   }
 }
