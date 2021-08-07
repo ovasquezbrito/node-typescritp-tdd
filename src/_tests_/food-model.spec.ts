@@ -8,7 +8,7 @@ describe('Classes food model', () => {
       price: 100,
       inventory: 50
     })
-
+    expect(foodModel.getFood()).toEqual(foodModel)
     expect(foodModel.getName()).toEqual('name')
     expect(foodModel.getDescription()).toEqual('description')
     expect(foodModel.getPrice()).toBe(100)
